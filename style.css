@@ -3,7 +3,6 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: black;
     color: white;
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
@@ -11,20 +10,20 @@
 
 .main{
     display: grid;
-    grid-template-columns: 340px 1fr;
+    grid-template-columns: 370px 1fr;
     height: 100vh;
 }
 
 .sidebar{
-    background-color: purple;
+    background-color: black;
 }
 
 .main-content{
-    background-color: green;
+    background-color: black;
 }
 
 .music-player{
-    background-color: yellow;
+    background-color: black;
     height: 100px;
     position: fixed;
     bottom: 0;
@@ -32,7 +31,7 @@
 }
 
 nav{
-    background-color: black;
+    background-color: #121212;
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -41,13 +40,13 @@ nav{
     border-radius: 1rem; /* 16px */
 }
 
-nav .nav-option a{
+nav .nav-option a , .lib-option a{
     text-decoration: none;
     margin-left: 0.75rem;
 }
 
 .nav-option{
-    padding: 0.75rem;
+    padding: 0.75rem 2rem; 2rem;;
     line-height: 2.5rem;
     opacity: 0.7;
     display: flex;
@@ -61,4 +60,66 @@ nav .nav-option a{
 .nav-option i{
     font-size: 1.25rem;
     cursor: pointer;
+}
+
+.library{
+    margin: 0.5rem 0.75rem;
+    border-radius: 1rem; /* 16px */
+    height: 100%;
+    background-color: #121212;
+}
+
+.library .option{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 2rem;
+    align-items: center;
+    opacity: 0.7;
+    font-size: 1.1rem;
+}
+
+.option img{
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+.lib-option{
+    display: flex;
+}
+
+.icons i{
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.icons i:hover{
+    opacity: 1;
+}
+
+.box{
+    background-color: #232323;
+    padding: 0.75rem 2rem;
+    margin: 1.7rem 0.7rem;
+    border-radius: 1rem;
+}
+
+.btn{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    color: black;
+    width: fit-content;
+    font-size: 0.9rem;
+    padding: 7px 10px;
+    margin-top: 0.8rem;
+    cursor: pointer;
+}
+
+.p1{
+    font-weight: 500;
+}
+
+.p2{
+    font-size: 0.9rem;
+    margin: 0.65rem 0rem;
 }
