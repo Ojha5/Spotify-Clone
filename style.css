@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    height: 100vh;
+}
+
+.sidebar{
+    background-color: purple;
+}
+
+.main-content{
+    background-color: green;
+}
+
+.music-player{
+    background-color: yellow;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+nav{
+    background-color: black;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5rem 0.75rem;
+    border-radius: 1rem; /* 16px */
+}
+
+nav .nav-option a{
+    text-decoration: none;
+    margin-left: 0.75rem;
+}
+
+.nav-option{
+    padding: 0.75rem;
+    line-height: 2.5rem;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+}
+
+.nav-option:hover{
+    opacity: 1;
+}
+
+.nav-option i{
+    font-size: 1.25rem;
+    cursor: pointer;
+}
