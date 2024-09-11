@@ -130,8 +130,9 @@ nav .nav-option a , .lib-option a{
 
 .main-content{
     overflow: auto; /* it means jab overflow hoga jo scroll bar aa jayega need ke basis pe */
-    margin: 0.5rem 0.75rem;
+    margin: 0.5rem 0px;
     border-radius: 1rem;
+    padding : 0px 0.75rem;
 }
 
 .sticky-nav{
@@ -142,6 +143,8 @@ nav .nav-option a , .lib-option a{
     top: 0;
     background: #232323;
     padding: 10px 18px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 .dark-btn{
@@ -180,4 +183,33 @@ nav .nav-option a , .lib-option a{
 .sticky-icons img:last-child{
     opacity: 1;
     cursor: pointer;
+}
+
+.cards-container h2{
+    margin: 20px 1.5rem;
+}
+
+.card{
+    width: 200px;
+    background-color: #232323;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.card-item img{
+    width: 100%;
+}
+
+.card-item{
+    padding: 17px 15px;
+}
+
+h4{
+    margin: 15px 0px;
+}
+
+.cards{
+    padding: 0px 2rem;
+    display: flex;
+    flex-wrap: wrap;
 }
